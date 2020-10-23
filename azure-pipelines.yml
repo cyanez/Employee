@@ -36,7 +36,7 @@ steps:
 resources:
   pipelines:
   - pipeline: InstallWebApp
-    source: AspNetRealiseTest-lib-ci
+    source: cyanez.AspNetRealiseTest
     trigger:
       branches:
         include:
