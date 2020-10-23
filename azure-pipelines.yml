@@ -31,3 +31,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+resources:
+  pipelines:
+  - pipeline: AspNetRealiseTest # Name of the pipeline resource
+    source: AspNetRealiseTest-lib-ci # Name of the pipeline referenced by the pipeline resource
+    trigger: 
+      branches:    
+      - master
