@@ -33,11 +33,3 @@ steps:
     configuration: '$(buildConfiguration)'
 
 
-resources:
-  pipelines:
-  - pipeline: InstallWebApp
-    source: cyanez.AspNetRealiseTest
-    trigger:
-      branches:
-        include:
-        - master
