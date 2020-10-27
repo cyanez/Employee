@@ -42,15 +42,10 @@ steps:
     versioningScheme: 'off'
 
 
+
 - task: NuGetCommand@2
-  displayName: 'nuget push'
   inputs:
-    command: 'push'
-    feedsToUse: 'select'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: 'InitiaFeedTest'    
-    versioningScheme: 'off'
-    allowPackageConflicts: true
-
-
+     command: 'push'
+     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+     nuGetFeedType: 'internal'
+     publishVstsFeed: '76927760-7c2d-40ef-9029-0bec7579889a/88cdbd35-f00f-47d6-98ce-8d370162a224'
