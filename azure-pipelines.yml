@@ -49,7 +49,7 @@ steps:
     feedsToUse: 'select'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'internal'
-    publishVstsFeed: 'CyanezTestFeed'    
+    publishVstsFeed: 'InitiaFeedTest'    
     versioningScheme: 'off'
     allowPackageConflicts: true
 
