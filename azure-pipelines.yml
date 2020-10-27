@@ -37,7 +37,7 @@ steps:
   inputs:
     command: 'pack'
     arguments: '--configuration $(buildConfiguration)'
-    packagesToPack: 'CommonLib/CommonLib.csproj'
+    packagesToPack: 'Employ/CommonLib.csproj'
     nobuild: true
     versioningScheme: 'off'
 
