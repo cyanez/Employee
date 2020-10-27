@@ -48,7 +48,8 @@ steps:
     command: 'push'
     feedsToUse: 'select'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'    
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'TestFeed'    
     versioningScheme: 'off'
     allowPackageConflicts: true
 
