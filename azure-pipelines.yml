@@ -37,7 +37,7 @@ steps:
   inputs:
     command: 'pack'
     arguments: '--configuration $(buildConfiguration)'
-    packagesToPack: 'Employ/CommonLib.csproj'
+    packagesToPack: 'EmployeeFramework/EmployeeFramework.csproj'
     nobuild: true
     versioningScheme: 'off'
 
@@ -49,7 +49,7 @@ steps:
     feedsToUse: 'select'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'internal'
-    publishVstsFeed: 'TestFeed'
+    publishVstsFeed: 'InitiaFeedTest'    
     versioningScheme: 'off'
     allowPackageConflicts: true
 
