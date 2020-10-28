@@ -10,6 +10,11 @@ namespace EmployeeFrameWork {
       set => name = value;
     }
 
+    private string age;
+    public string Age {
+      get => age;
+      set => age = value;
+    }
     public string SayHello() {
       return $"hello {name}";
     }
